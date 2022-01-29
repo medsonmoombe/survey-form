@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Survey form</title>
-  
+  <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body >
+  
   <h1 id="title">Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <p id="description">Thank you for using our platform</p>
   <form id="survey-form">
+    <div class="inputs">
     <label id="name-label" for="name" >
    Name:
   </label> <input id="name" type="text" placeholder="enter name" required>
@@ -22,6 +24,8 @@
     <lable id="number-label" for="number" >Number:</lable>
 
     <input id="number" type="number" min="8" max="100" placeholder="enter number" required><br>
+  </div>
+  <div class="dropdown">
     <p>What is your favorite car?</p>
     <select id="dropdown" name="role" class="form-control" required>
       <option disabled selected value>Select car</option>
@@ -31,6 +35,8 @@
       <option value="ford">ford</option>
       <option value="other">Other</option>
     </select><br>
+  </div>
+  <div class="radio">
     <p>Choose your favourite color</p>
       <label>
         <input
@@ -64,8 +70,9 @@
         value="not-sure"
         type="radio"
         class="input-radio"
-      />not sure</label
-    ><br>
+      />not sure</label><br>
+  </div>
+  <div class="select-tag">
     <p>
       What would you like to see improved?
     </p>
@@ -102,9 +109,10 @@
         value="nothing"
         type="checkbox"
         class="input-checkbox"
-      />nothing</label
-    
-    >
+      />nothing</label>
+
+    </div>
+     
   </div>
     <div class="form-group">
       <p>Any comments or suggestions?</p>
@@ -115,25 +123,13 @@
         placeholder="Enter your comment here..."
       ></textarea>
     </div>
-    <div class="form-group">
+   
       <button type="submit" id="submit" class="submit-button">
         Submit
       </button>
-    </div>
+   
     
   </form>
-<!-- partial:index.partial.html -->
-<!-- 
-
-Hello Camper!
-
-Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
-<!-- partial -->
-  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
