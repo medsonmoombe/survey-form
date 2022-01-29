@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by medson</title>
+  
+
+</head>
+<body>
+  <h1 id="title">Survey  Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" for="name" >
+   Name:
+  </label> <input id="name" type="text" placeholder="enter name" required>
+  <br>
+  <br>
+  <lable id="email-label" for="email" >email:</lable>
+    <input id="email" type="email" placeholder="enter email" required>
+    <br>
+    <br>
+    <lable id="number-label" for="number" >Number:</lable>
+
+    <input id="number" type="number" min="8" max="100" placeholder="enter number" required><br>
+    <p>What is your favorite car?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>Select car</option>
+      <option value="toyota">toyota</option>
+      <option value="isuzu">isuzu</option>
+      <option value="tesla">tesla</option>
+      <option value="ford">ford</option>
+      <option value="other">Other</option>
+    </select><br>
+    <p>Choose your favourite color</p>
+      <label>
+        <input
+          name="user-favourite"
+          value="red"
+          type="radio"
+          class="input-radio"
+          checked
+        />red</label
+      ><br>
+      <label>
+        <input
+          name="user-favourite"
+          value="green"
+          type="radio"
+          class="input-radio"
+        />green</label
+      ><br>
+
+      <label
+        ><input
+          name="user-favourite"
+          value="blue"
+          type="radio"
+          class="input-radio"
+        />blue</label
+      ><br>
+      <label
+      ><input
+        name="user-favourite"
+        value="not-sure"
+        type="radio"
+        class="input-radio"
+      />not sure</label
+    ><br>
+    <p>
+      What would you like to see improved?
+    </p>
+
+    <label
+      ><input
+        name="prefer"
+        value="speed"
+        type="checkbox"
+        class="input-checkbox"
+      />speed</label
+    ><br>
+    <label>
+      <input
+        name="prefer"
+        value="consumption"
+        type="checkbox"
+        class="input-checkbox"
+      />consumption</label
+    ><br>
+    <label
+      ><input
+        name="prefer"
+        value="Esthetics
+        "
+        type="checkbox"
+        class="input-checkbox"
+      />Esthetics</label
+      
+    ><br>
+    <label
+      ><input
+        name="prefer"
+        value="nothing"
+        type="checkbox"
+        class="input-checkbox"
+      />nothing</label
+    
+    >
+  </div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+<!-- partial:index.partial.html -->
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
